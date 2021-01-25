@@ -6,164 +6,151 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="main-page">
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="main-navigation__list-one">
-        <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">информация</a></li>
-        <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">фото и видео</a></li>
-      </ul>
-      <img class="main-logo" src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
-      <ul class="main-navigation__list-two">
-        <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">карта штата</a></li>
-        <li class="main-navigation__item text_small"><a class="main-navigation__link" href="catalog.html">гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-  <main class="content">
-    <section class="greeting">
-      <h1 class="visually-hidden">Седона</h1>
-      <div class="main-image">
-        <img class="main-image__image" src="img/background_photo.jpg" width="1200" height="509" alt="Sedona">
-        <img class="main-image__motto" src="img/welcome.png" width="456" height="351"
-          alt="Welcome to the gorgeous Sedona">
+<body>
+  <div class="content">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">информация</a></li>
+          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">фото и видео</a></li>
+          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">карта штата</a></li>
+          <li class="main-navigation__item text_small"><a class="main-navigation__link"
+              href="catalog.html">гостиницы</a>
+          </li>
+        </ul>
+        <a href="index.html"><img class="main-logo" src="img/logo.svg" width="138" height="70" alt="Логотип сайта"></a>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="greeting">
+        <h1 class="visually-hidden">Седона</h1>
+        <div class="main-image">
+          <img class="main-image__image" src="img/background_photo.jpg" width="1200" height="509" alt="Sedona">
+          <img class="main-image__motto" src="img/welcome.png" width="456" height="351"
+            alt="Welcome to the gorgeous Sedona">
+        </div>
       </div>
-    </section>
-    <section class="features">
-      <h2 class="features__title text_big">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
-      <p class="features__description text_small light-black-text">Рассмотрим 5 причин, по которым Седона круче, чем
-        Гранд Каньон</p>
-      <ul class="features-list">
-        <li class="features-item">
+      <section class="features">
+        <h2 class="features__title text_big">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+        <p class="features__description text_small light-black-text">Рассмотрим 5 причин, по которым Седона круче, чем
+          Гранд Каньон</p>
+        <div class="features-list">
           <div class="features-item_colored white-text">
             <h3 class="features-item__headline text_medium">Настоящий городок</h3>
             <p class="features-item__text">-№1-</p>
             <p class="features-item__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img class="city" src="img/city.jpg" width="800" height="256" alt="Городок">
-        </li>
-        <li class="features-item">
-          <ul class="features-item__list">
-            <li class="features-item__column_one">
+          <section class="features-item__list">
+            <h3 class="visually-hidden">Жизнь Седоны</h3>
+            <div class="features-item__column_one">
               <h4 class="features-item__headline_imaged text_medium house">жильё</h4>
               <p class="features-item__text light-black-text">рекомендуем пожить в настоящем мотеле,всё как в кино!
               </p>
-            </li>
-            <li class="features-item__column_one">
+            </div>
+            <div class="features-item__column_one">
               <h4 class="features-item__headline_imaged text_medium hamburger">еда</h4>
               <p class="features-item__text light-black-text">всегда заказывайте фирменный бургер,Вы не разочаруетесь!
               </p>
-            </li>
-            <li class="features-item__column_one">
+            </div>
+            <div class="features-item__column_one">
               <h4 class="features-item__headline_imaged text_medium gift">сувениры</h4>
               <p class="features-item__text light-black-text">не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </li>
-        <li class="features-item">
+            </div>
+          </section>
           <img class="canyon" src="img/canyon.jpg" width="800" height="256" alt="Каньон">
           <div class="features-item_colored white-text">
             <h3 class="features-item__headline text_medium">Там есть мост дьявола</h3>
             <p class="features-item__text">- №2 -</p>
             <p class="features-item__text">Да,по нему можно пройти!Если конечно Вы осмелитесь</p>
           </div>
-        </li>
-        <li class="features-item">
-          <ul class="features-item__list">
-            <li class="features-item__column_two">
-              <h3 class="features-item__headline text_medium">небольшая площадь</h3>
+          <section class="features-item">
+            <h3 class="visually-hidden">География Седоны</h3>
+            <div class="features-item__column_two">
+              <h4 class="features-item__headline text_medium">небольшая площадь</h4>
               <p class="features-item__text light-black-text">- №3 -</p>
               <p class="features-item__text light-black-text">все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="features-item__column_two">
-              <h3 class="features-item__headline text_medium">красивая дорога</h3>
+            </div>
+            <div class="features-item__column_two">
+              <h4 class="features-item__headline text_medium">красивая дорога</h4>
               <p class="features-item__text light-black-text">- №4 -</p>
               <p class="features-item__text light-black-text">ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="features-item__column_two">
-              <h3 class="features-item__headline text_medium">мало туристов</h3>
+            </div>
+            <div class="features-item__column_two">
+              <h4 class="features-item__headline text_medium">мало туристов</h4>
               <p class="features-item__text light-black-text">- №5 -</p>
               <p class="features-item__text light-black-text">большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <div class="location">
-      <h2 class="visually-hidden">расположение</h2>
-      <p class="location__headline">заинтересовались?</p>
-      <p class="location__text">укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в
-        Седоне</p>
-    </div>
-    <button class="hotel-search__button text_big white-text">Поиск гостиницы в седоне</button>
-    <img class="location-image" src="img/map.jpg" width="1199" height="594" alt="Карта">
-    <form class="hotel-search-form text_small" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form-container date-container">
-        <label class="hotel-search__label date-label" for="arrival-field">Дата заезда:</label>
-        <input class="hotel-search__field big-field text_small" type="text" name="arrival" id="arrival-field"
-          value="24 апреля 2017">
-        <div class="calendar">
-          <a class="form-object calendar-link" href="#">Календарик</a>
+            </div>
+          </section>
         </div>
+      </section>
+      <div class="location">
+        <h2 class="visually-hidden">расположение</h2>
+        <p class="location__headline">заинтересовались?</p>
+        <p class="location__text">укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в
+          Седоне</p>
       </div>
-      <div class="form-container date-container">
-        <label class="hotel-search__label date-label" for="departure-field">Дата выезда:</label>
-        <input class="hotel-search__field big-field text_small" type="text" name="departure" id="departure-field"
-          value="4 июля 2017">
-        <div class="calendar">
-          <a class="form-object calendar-link" href="#">Календарик</a>
+      <button class="hotel-search__button text_big white-text">Поиск гостиницы в седоне</button>
+      <img class="location-image" src="img/map.jpg" width="1199" height="594" alt="Карта">
+      <form class="hotel-search-form text_small" action="https://echo.htmlacademy.ru" method="get">
+        <div class="form-container date-container">
+          <label class="hotel-search__label date-label" for="arrival-field">Дата заезда:</label>
+          <input class="hotel-search__field big-field text_small" type="text" name="arrival" id="arrival-field"
+            value="24 апреля 2017">
+          <div class="calendar">
+            <a class="form-object calendar-link" href="#">Календарик</a>
+          </div>
         </div>
+        <div class="form-container date-container">
+          <label class="hotel-search__label date-label" for="departure-field">Дата выезда:</label>
+          <input class="hotel-search__field big-field text_small" type="text" name="departure" id="departure-field"
+            value="4 июля 2017">
+          <div class="calendar">
+            <a class="form-object calendar-link" href="#">Календарик</a>
+          </div>
+        </div>
+        <div class="form-container amount-container">
+          <label class="hotel-search__label amount-label" for="adults-field">взрослые: </label>
+          <div class="less-button">
+            <a class="form-object" href="#">Минус</a>
+          </div>
+          <input class="hotel-search__field small-field text_small" type="text" value="2" name="adults"
+            id="adults-field">
+          <div class="more-button">
+            <a class="form-object" href="#">Плюс</a>
+          </div>
+        </div>
+        <div class="form-container amount-container">
+          <label class="hotel-search__label amount-label" for="kids-field">дети:</label>
+          <div class="less-button">
+            <a class="form-object" href="">Минус</a>
+          </div>
+          <input class="hotel-search__field small-field text_small" type="text" value="0" name="kids" id="kids-field">
+          <div class="more-button">
+            <a class="form-object" href="">Плюс</a>
+          </div>
+        </div>
+        <input class="hotel-search-form__button text_big white-text" type="submit" value="найти">
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="contacts text_big">
+        <p class="contacts__text">#visitsedona</p>
+        <a class="phone" href="">ТЕЛ:+7(495)666-01-66</a>
       </div>
-      <div class="form-container amount-container">
-        <label class="hotel-search__label amount-label" for="adults-field">взрослые: </label>
-        <div class="less-button">
-          <a class="form-object" href="#">Минус</a>
-        </div>
-        <input class="hotel-search__field small-field text_small" type="text" value="2" name="adults" id="adults-field">
-        <div class="more-button">
-          <a class="form-object" href="#">Плюс</a>
-        </div>
+      <div class="socials">
+        <a class="socials__link" href=""><img src="img/twitter.svg" alt="twitter"></a>
+        <a class="socials__link" href=""><img src="img/facebook.svg" alt="facebook" ></a>
+        <a class="socials__link" href=""><img src="img/youtube.svg" alt="youtube"></a>
       </div>
-      <div class="form-container amount-container">
-        <label class="hotel-search__label amount-label" for="kids-field">дети:</label>
-        <div class="less-button">
-          <a class="form-object" href="">Минус</a>
-        </div>
-        <input class="hotel-search__field small-field text_small" type="text" value="0" name="kids" id="kids-field">
-        <div class="more-button">
-          <a class="form-object" href="">Плюс</a>
-        </div>
+      <div class="site-creator">
+        <p class="site-creator__description text_small">website by</p>
+        <a class="site-creator__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+        </a>
       </div>
-      <input class="hotel-search-form__button text_big white-text" type="submit" value="найти">
-    </form>
-  </main>
-  <footer class="main-footer">
-    <div class="contacts text_big">
-      <p class="contacts__text">#visitsedona</p>
-      <a class="phone" href="">ТЕЛ:+7(495)666-01-66</a>
-    </div>
-    <div class="socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <p class="visually-hidden"><a class="socials__link" href="">twitter</a></p>
-        </li>
-        <li class="socials__item">
-          <p class="visually-hidden"><a class="socials__link" href="">facebook</a></p>
-        </li>
-        <li class="socials__item">
-          <p class="visually-hidden"><a class="socials__link" href="">youtube</a></p>
-        </li>
-      </ul>
-    </div>
-    <div class="site-creator">
-      <p class="site-creator__description text_small">website by</p>
-      <a class="site-creator__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
-      </a>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
 </body>
 
