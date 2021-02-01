@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans?query=PT#standard-styles">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,11 +15,11 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">информация</a></li>
-          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">фото и видео</a></li>
-          <li class="main-navigation__item text_small"><a class="main-navigation__link" href="">карта штата</a></li>
-          <li class="main-navigation__item text_small"><a class="main-navigation__link"
-              href="catalog.html">гостиницы</a>
+          <li class="main-navigation__item text_small"><a class="info-link" href="">информация</a></li>
+          <li class="main-navigation__item text_small"><a class="info-link" href="">фото и видео</a></li>
+          <li class="main-navigation__item text_small"><a class="info-link" href="">карта штата</a></li>
+          <li class="main-navigation__item text_small"><a class="info-link" href="catalog.html">гостиницы</a>
+          </li>
           </li>
         </ul>
         <a href="index.html"><img class="main-logo" src="img/logo.svg" width="138" height="70" alt="Логотип сайта"></a>
@@ -48,17 +51,17 @@
           </section>
           <section class="features-item">
             <h3 class="visually-hidden">Жизнь Седоны</h3>
-            <div class="features-item__column_one">
+            <div class="features-item__row_one">
               <h4 class="features-item__headline_imaged text_medium house">жильё</h4>
               <p class="features-item__text light-black-text">рекомендуем пожить в настоящем мотеле,всё как в кино!
               </p>
             </div>
-            <div class="features-item__column_one">
+            <div class="features-item__row_one">
               <h4 class="features-item__headline_imaged text_medium hamburger">еда</h4>
               <p class="features-item__text light-black-text">всегда заказывайте фирменный бургер,Вы не разочаруетесь!
               </p>
             </div>
-            <div class="features-item__column_one">
+            <div class="features-item__row_one">
               <h4 class="features-item__headline_imaged text_medium gift">сувениры</h4>
               <p class="features-item__text light-black-text">не только китайского, но и местного производства!</p>
             </div>
@@ -73,17 +76,17 @@
           </section>
           <section class="features-item">
             <h3 class="visually-hidden">География Седоны</h3>
-            <div class="features-item__column_two">
+            <div class="features-item__row_two">
               <h4 class="features-item__headline text_medium">небольшая площадь</h4>
               <p class="features-item__text light-black-text">- №3 -</p>
               <p class="features-item__text light-black-text">все достопримечательности находятся очень близко</p>
             </div>
-            <div class="features-item__column_two">
+            <div class="features-item__row_two">
               <h4 class="features-item__headline text_medium">красивая дорога</h4>
               <p class="features-item__text light-black-text">- №4 -</p>
               <p class="features-item__text light-black-text">ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="features-item__column_two">
+            <div class="features-item__row_two">
               <h4 class="features-item__headline text_medium">мало туристов</h4>
               <p class="features-item__text light-black-text">- №5 -</p>
               <p class="features-item__text light-black-text">большинство едет в Гранд Каньон и толпится там</p>
@@ -97,7 +100,7 @@
         <p class="location__text">укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в
           Седоне</p>
       </div>
-      <button class="hotel-search__button text_big white-text">Поиск гостиницы в седоне</button>
+      <button class="hotel-search__button text_big white-text background-two">Поиск гостиницы в седоне</button>
       <img class="location-image" src="img/map.jpg" width="1199" height="594" alt="Карта">
       <form class="hotel-search-form text_small" action="https://echo.htmlacademy.ru" method="get">
         <div class="form-container date-container">
@@ -137,7 +140,7 @@
             <a class="form-object" href="">Плюс</a>
           </div>
         </div>
-        <input class="hotel-search-form__button text_big white-text" type="submit" value="найти">
+        <input class="hotel-search-form__button text_big white-text background-one" type="submit" value="найти">
       </form>
     </main>
     <footer class="main-footer">
@@ -146,9 +149,9 @@
         <a class="phone" href="">ТЕЛ:+7(495)666-01-66</a>
       </div>
       <div class="socials">
-        <a class="socials__link" href=""><img src="img/twitter.svg" alt="twitter"></a>
-        <a class="socials__link" href=""><img src="img/facebook.svg" alt="facebook"></a>
-        <a class="socials__link" href=""><img src="img/youtube.svg" alt="youtube"></a>
+        <a class="socials__link background-one" href=""><img src="img/twitter.svg" alt="twitter"></a>
+        <a class="socials__link background-one" href=""><img src="img/facebook.svg" alt="facebook"></a>
+        <a class="socials__link background-one" href=""><img src="img/youtube.svg" alt="youtube"></a>
       </div>
       <div class="site-creator">
         <p class="site-creator__description text_small">website by</p>
