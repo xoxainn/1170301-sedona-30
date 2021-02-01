@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "PT Sans","Arial" , sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -124,6 +124,10 @@ img {
 
 .features-item:last-child {
   background-color: var(--basic-gray);
+}
+
+.site-creator__description {
+  font-weight: normal;
 }
 
 
