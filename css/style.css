@@ -200,6 +200,7 @@ img {
 .features-item:last-child {
   background-color: var(--basic-gray);
 }
+/*footer*/
 
 .main-footer {
   display: grid;
