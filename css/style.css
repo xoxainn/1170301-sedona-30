@@ -138,6 +138,10 @@ img {
   background-color: var(--basic-brown-active);
   color: var(--basic-white-transparent);
 }
+.inactive {
+  pointer-events: none;
+  outline: 2px solid red;
+}
 
 /* INDEX */
 
@@ -395,6 +399,7 @@ img {
   padding: 10px 25px;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 
 
 }
@@ -563,32 +568,29 @@ img {
 }
 
 
-.main-footer .footer-contacts {
+.footer-contacts {
   position: absolute;
   width: 1200px;
   height: 127px;
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+  justify-content: center;
+  align-items: center;
   bottom: 0px;
   right: 0px;
   z-index: 2;
   background-color: var(--basic-white-light-transparent);
 }
-.catalog-footer {
-  height: 127px;
-  padding-top: 6px;
-}
-
-.footer-contacts {
-  display: grid;
-  grid-template-columns: 1fr 350px 1fr;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+.catalog-contacts {
+  bottom: -127px;
+  background-color: var(--basic-white);
+  /*padding-top: 6px;*/
 }
 
 .contacts {
   margin-left: 49px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .contacts__text {
@@ -604,7 +606,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   margin-left: 0px;
 }
 
@@ -625,7 +627,7 @@ img {
   display: flex;
   justify-self: center;
   align-items: center;
-  margin: 0px 48px 3px 0px;
+  margin: 0px 48px 1px 0px;
 }
 
 .site-creator__description {
@@ -679,6 +681,7 @@ img {
   text-align: left;
   margin-right: 93px;
   padding: 0px;
+
 }
 
 .search-filter__list {
@@ -705,6 +708,7 @@ img {
 .filter-label {
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-input+.filter-label:before {
@@ -826,6 +830,7 @@ img {
   font-size: inherit;
   margin-top: 13px;
   margin-right: 9px;
+  cursor: pointer;
 
 }
 
@@ -925,7 +930,7 @@ img {
 }
 
 .decorated::after,
-.catalog-footer::after {
+.catalog-contacts::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -1039,11 +1044,6 @@ img {
   margin-bottom: 7px;
   margin-top: 12px;
 }
-
-.catalog-footer {
-  position: relative;
-}
-
-.catalog-footer::after {
+.catalog-contacts::after {
   left: 0px;
 }
