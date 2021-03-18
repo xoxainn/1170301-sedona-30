@@ -1,0 +1,7 @@
+{
+  "icons":[
+    {"src":"img/icons/16.ico","sizes":"16x16","type":"image/png" },
+    {"src":"img/icons/32.ico","sizes":"32x32","type":"image/png" },
+    {"src":"img/icons/152.ico","sizes":"152x152","type":"image/png" }
+  ]
+}

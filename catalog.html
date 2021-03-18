@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="content">
     <header class="main-header">
@@ -16,7 +20,7 @@
           <li class="main-navigation__item text_small"><a class="info-link" href="">информация</a></li>
           <li class="main-navigation__item text_small"><a class="info-link" href="">фото и видео</a></li>
           <li class="main-navigation__item text_small"><a class="info-link" href="">карта штата</a></li>
-          <li class="main-navigation__item text_small"><a class="info-link" href="catalog.html">гостиницы</a></li>
+          <li class="main-navigation__item text_small"><a class="info-link active" href="catalog.html">гостиницы</a></li>
         </ul>
         <a href="index.html"><img class="main-logo" src="img/logo.svg" width="138" height="70" alt="Логотип сайта"></a>
       </nav>
@@ -94,39 +98,31 @@
             <fieldset class="sort-box__fieldset">
               <ul class="sort-option">
                 <li class="sort-option__item active">
-                  <input class="visually-hidden sort-box__radio " type="radio" value="price" id="by-price-field"
+                  <input class="visually-hidden sort-box__radio " name="sort-radio" type="radio" value="price" id="by-price-field"
                     checked>
                   <label for="by-price-field" class="sort-option__label">по цене</label>
                 </li>
                 <li class="sort-option__item">
-                  <input class="visually-hidden sort-box__radio" type="radio" value="type" id="by-type-field">
+                  <input class="visually-hidden sort-box__radio" name="sort-radio" type="radio" value="type" id="by-type-field">
                   <label for="by-type-field" class="sort-option__label">по типу</label>
                 </li>
                 <li class="sort-option__item">
-                  <input class="visually-hidden sort-box__radio" type="radio" value="rating" id="by-rating-field">
+                  <input class="visually-hidden sort-box__radio" name="sort-radio" type="radio" value="rating" id="by-rating-field">
                   <label for="by-rating-field" class="sort-option__label">по рейтингу</label>
                 </li>
               </ul>
             </fieldset>
           </form>
-          <div class="sort-option__button">
-            <a class="sort-option-item sort-button-up" href="">
-              <span class="visually-hidden">button-up</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
-              </svg>
-            </a>
-            <a class="sort-option-item sort-button-down" href="">
-              <span class="visually-hidden">button-down</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#CACACA" />
-              </svg>
-            </a>
-          </div>
+          <form class="sort-option__button">
+            <input class="sort-button-up" type="radio" name="sort-button" value="up" id="up-field">
+            <label for="up-field" class="up-label"></label>
+            <input class="sort-button-down" type="radio" name="sort-button" value="down" id="down-field" checked>
+            <label for="down-field" class="down-label"></label>
+          </form>
         </div>
         <div class="sort-list">
           <div class="sort-list__item decorated">
-            <img class="sort-list__image" src="img/amara_resort&spa.jpg" width="135" height="90"
+            <img class="sort-list__image" src="img/amara-resort&spa.jpg" width="135" height="90"
               alt=" гостиница Amara Resort & Spa">
             <div class="sort-list__content">
               <div class="sort-list__item_description">
@@ -152,7 +148,7 @@
             </div>
           </div>
           <div class="sort-list__item decorated">
-            <img class="sort-list__image" src="img/desert_quail_inn.jpg" width="135" height="90"
+            <img class="sort-list__image" src="img/desert-quail-inn.jpg" width="135" height="90"
               alt="Мотель Desert Quail Inn">
             <div class="sort-list__content">
               <div class="sort-list__item_description">
@@ -177,7 +173,7 @@
             </div>
           </div>
           <div class="sort-list__item decorated">
-            <img class="sort-list__image" src="img/villas_at_poco_diablo.jpg" width="135" height="90"
+            <img class="sort-list__image" src="img/villas-at-poco-diablo.jpg" width="135" height="90"
               alt="апартаменты Villas at Poco Diablo">
             <div class="sort-list__content">
               <div class="sort-list__item_description">
@@ -248,4 +244,5 @@
     </footer>
   </div>
 </body>
+
 </html>
