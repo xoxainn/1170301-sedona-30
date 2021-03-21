@@ -33,16 +33,16 @@
           <fieldset class="infrastructure search__fieldset">
             <legend class="filter-legend">инфраструктура</legend>
             <ul class="infrastructure__list search-filter__list">
-              <li class="infrastructure__item search-filter__item">
+              <li class="infrastructure__item search-filter__item" tabindex="0">
                 <input class="visually-hidden filter-input" type="checkbox" name="pool" id="pool-field" checked>
                 <label class="filter-label" for="pool-field">бассейн</label>
               </li>
-              <li class="infrastructure__item search-filter__item">
-                <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking-field">
+              <li class="infrastructure__item search-filter__item" tabindex="0">
+                <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking-field" tabindex="0">
                 <label class="filter-label" for="parking-field">парковка</label>
               </li>
-              <li class="infrastructure__item search-filter__item">
-                <input class="visually-hidden filter-input" type="checkbox" name="internet" id="internet-field">
+              <li class="infrastructure__item search-filter__item" tabindex="0">
+                <input class="visually-hidden filter-input" type="checkbox" name="internet" id="internet-field" tabindex="0">
                 <label class="filter-label" for="internet-field">wi-fi</label>
               </li>
             </ul>
@@ -50,15 +50,15 @@
           <fieldset class="house-type search__fieldset">
             <legend class="filter-legend ">тип жилья:</legend>
             <ul class="house-type__list search-filter__list">
-              <li class="house-type__item search-filter__item">
+              <li class="house-type__item search-filter__item" tabindex="0">
                 <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="hotel-field" checked>
                 <label class="filter-label" for="hotel-field">гостиница</label>
               </li>
-              <li class="house-type__item search-filter__item">
+              <li class="house-type__item search-filter__item" tabindex="0">
                 <input class="visually-hidden filter-input" type="checkbox" name="motel" id="motel-field" checked>
                 <label class="filter-label" for="motel-field">мотель</label>
               </li>
-              <li class="house-type__item search-filter__item">
+              <li class="house-type__item search-filter__item" tabindex="0">
                 <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field"
                   checked>
                 <label class="filter-label" for="apartments-field">апартаменты</label>
@@ -80,8 +80,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <div class="toggle toggle-min" tabindex="0"><a class="toggle-min-link" href=""></a></div>
+                    <div class="toggle toggle-max" tabindex="0"><a class="toggle-max-link" href=""></a></div>
                   </div>
                 </div>
               </li>
@@ -100,15 +100,15 @@
                 <li class="sort-option__item active">
                   <input class="visually-hidden sort-box__radio " name="sort-radio" type="radio" value="price" id="by-price-field"
                     checked>
-                  <label for="by-price-field" class="sort-option__label">по цене</label>
+                  <label for="by-price-field" class="sort-option__label" tabindex="0">по цене</label>
                 </li>
                 <li class="sort-option__item">
                   <input class="visually-hidden sort-box__radio" name="sort-radio" type="radio" value="type" id="by-type-field">
-                  <label for="by-type-field" class="sort-option__label">по типу</label>
+                  <label for="by-type-field" class="sort-option__label" tabindex="0">по типу</label>
                 </li>
                 <li class="sort-option__item">
                   <input class="visually-hidden sort-box__radio" name="sort-radio" type="radio" value="rating" id="by-rating-field">
-                  <label for="by-rating-field" class="sort-option__label">по рейтингу</label>
+                  <label for="by-rating-field" class="sort-option__label" tabindex="0">по рейтингу</label>
                 </li>
               </ul>
             </fieldset>
@@ -117,7 +117,7 @@
             <input class="sort-button-up" type="radio" name="sort-button" value="up" id="up-field">
             <label for="up-field" class="up-label"></label>
             <input class="sort-button-down" type="radio" name="sort-button" value="down" id="down-field" checked>
-            <label for="down-field" class="down-label"></label>
+            <label for="down-field" class="down-label" ></label>
           </form>
         </div>
         <div class="sort-list">
@@ -203,7 +203,7 @@
       <div class="footer-contacts catalog-contacts">
         <div class="contacts text_big">
           <p class="contacts__text">#visitsedona</p>
-          <a class="phone" href="">ТЕЛ: +7(495) 666-01-66</a>
+          <a class="phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
         </div>
         <div class="socials">
           <a class="socials__link background-one" href="">
