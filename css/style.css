@@ -451,18 +451,26 @@ img {
 }
 
 .date-container {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 7px;
 }
 
 .departure-label {
+  display: block;
   margin-right: 19px;
   margin-left: 1px;
   text-transform: uppercase;
+  width: 94px;
+  margin-top: 7px;
 }
 
 .arrival-label {
-  margin-right: 20px;
+  display: block;
+  margin-right: 19px;
   margin-left: 1px;
+  width: 90px;
+  margin-top: 7px;
 }
 
 .adults-label {
@@ -481,9 +489,9 @@ img {
 
 
 .big-field {
-  width: 333px;
+  width: 332px;
   height: 38px;
-  padding-left: 11px;
+  padding-left: 12px;
   text-transform: uppercase;
 }
 
