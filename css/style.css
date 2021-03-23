@@ -610,10 +610,6 @@ img {
   margin: 10px 9px 9px 8px;
 }
 
-.phone {
-  letter-spacing: 0.02em;
-}
-
 .socials {
   display: flex;
   flex-wrap: wrap;
@@ -714,7 +710,7 @@ img {
   margin-bottom: 25px;
 }
 .filter-input:focus+.filter-label:before {
-  outline: 2px solid black;
+  outline: 2px solid var(--basic-black);
 }
 
 .search-filter__item:last-child {
@@ -752,7 +748,7 @@ img {
 }
 
 .price-legend {
-  width: 180px;
+  width: 190px;
   margin-left: 0px;
   margin-bottom: 12px;
   text-align: left;
